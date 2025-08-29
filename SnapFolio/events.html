@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Page</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+   
+    <style>
+      @font-face {font-family: myfont; src: url(NRT-Bd.ttf);}
+        .bg-fr{background-color: #9330ff;}.bg-se{background-color: #c957bc;}.bg-th{background-color: #ffc872;}.bg-fo{background-color: #ffe3b3;}
+        .text-fr{color: #9330ff;}.text-se{color: #c957bc;}.text-th{color: #ffc872;}.text-fo{color: #ffe3b3;}
+        /* styles */
+        body{
+          background-color: rgb(238, 238, 238);
+          font-family: myfont;
+        }
+        .search {
+            background-color: #f2f2f2;
+            padding: 2rem;
+            border-radius: 5px;
+        }
+        .input-text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input-text {
+            width: 400px;
+            padding: 0.5rem 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        .search-icon {
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            gap:1rem;
+        }
+        
+       
+    </style>
+</head>
+
+<body dir="rtl">
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed">
+    <div class="container-fluid">
+    <a href="indexx.html" class="navbar-brand">کۆسپ</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#colps">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-around" id="colps">
+        <ul class="navbar-nav py-3" >
+            <li class="nav-item" >
+              <a class="nav-link  " aria-current="page" href="indexx.html">سەرەتا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="events.html" >ئیڤێنتەکان</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="records.html">تۆمارکراوەکان</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="speakers.html" >قسەکەرەکان</a>
+              </li></ul></div></div></nav>
+    <div class="container">
+        <div class="search">
+            <div class="input-text-container">
+              <div class="main">
+                <!-- Another variation with a button -->
+                <div class="input-group ">
+                  <div class="input-group-append">
+                    <button  class="btn btn-secondary  border-right-0"  type="button" style="width:80px;height:50px;" >
+                      <i class="fa fa-search "></i>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16"> <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/> </svg>
+                    </button>
+                    
+                  </div><input type="text" class="form-control form-control-lg border-right-0 rounded me-2" placeholder="گەڕان" style="width:400px;height: 50px;font-size: small;">
+                  
+                </div>
+
+              </div>
+        
+            </div>
+             <!-- navbar-->
+            <div class="container-fluid m-3">
+              <div class="row justify-content-start">
+                <div class="col-auto">
+                  <div class=" rounded-5 px-3 py-1"  style="background-color:#ffd085 ;">
+                      <a class="navbar-brand" href="#">کتێب</a>
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <div class=" rounded-5 px-3 py-1" style="background-color:#be82ff ;" >
+                    <a class="navbar-brand" href="#">گەشەپێدانی مرۆیی</a>
+                </div>
+                </div>
+                <div class="col-auto">
+                  <div class="rounded-5 px-3 py-1" style="background-color:#ffa0f4 ;">
+                    <a class="navbar-brand" href="#">زانکۆ</a>
+                </div>
+                </div>
+                <div class="col-auto">
+                  <div class=" rounded-5 py-1">
+                    <i class="bi bi-arrow-counterclockwise"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+         <!-- dropdown-menu-->
+        <div class="border p-5 ">
+        <div class="button-container d-flex justify-content-start " style="height:50px;">
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" >شارەکان
+            </button>
+              
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">هەولێر</a></li>
+              <li><a class="dropdown-item" href="#">سلێمانی</a></li>
+              <li><a class="dropdown-item" href="#">دهۆک</a></li>
+            </ul>
+        
+        </div>
+        
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+              ڕۆژەکان
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">هەینی</a></li>
+              <li><a class="dropdown-item" href="#">شەممە</a></li>
+              <li><a class="dropdown-item" href="#">یەک شەم</a></li>
+              <li><a class="dropdown-item" href="#">دوو شەم</a></li>
+              <li><a class="dropdown-item" href="#">سێ شەم</a></li>
+              <li><a class="dropdown-item" href="#">چوار شەم</a></li>
+              <li><a class="dropdown-item" href="#">پێنج شەم</a></li>
+            </ul>
+        
+        </div>
+    
+        <div class="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+              بوارەکان
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">گەشەپێدان</a></li>
+              <li><a class="dropdown-item" href="#">زانستی</a></li>
+              <li><a class="dropdown-item" href="#">ئاینی</a></li>
+            </ul>
+        
+        </div></div>  </div>
+         <!-- card -->
+            <div class="border">
+            <div class="row">
+              <div class="carts d-flex justify-content-center flex-wrap" >
+
+                <div class="card m-3" style="max-width: 18rem; background-color: rgb(243, 243, 243);">
+                  <img src="img/1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between">
+                    <div class="bg-light px-2 py-1 rounded-1" style="height: 30px;"><p style="font-size: small;">10,000 IQD</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart-fill text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title " >کتێب باشترین هاوڕێی مرۆڤە</h6>
+                    <span class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</span>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">01</span>/02</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>04:30 د.ن</span>
+                    </div>
+                   <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+                  </div>
+                </div>
+                </div>
+            
+                <div class="card m-3 bg-light " style="max-width: 18rem;">
+                  <img src="img/2.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between" style="height: 70px;">
+                    <div class="bg-light px-2 py-1  rounded-2" style="height: 30px;"><p style="font-size: small;">خۆڕایی</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart-fill text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title " >هێزی متمانە</h6>
+                    <span class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</span>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">24</span>/03</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>10:30 پ.ن</span>
+                    </div>
+                    <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+                  </div>
+                </div>
+                </div>
+            
+                <div class="card m-3 bg-light" style="max-width: 18rem;">
+                  <img src="img/3.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between" style="height: 70px;">
+                    <div class="bg-light px-2 py-1  rounded-2" style="height: 30px;"><p style="font-size: small;">خۆڕایی</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title" >زانکۆ ناوەندی مەعریفی</h6>
+                    <p class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</p>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">15</span>/03</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>02:00 د.ن</span>
+                    </div>
+                    <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+            
+                  </div>
+                </div>
+                </div>
+                <div class="card m-3" style="max-width: 18rem; background-color: rgb(243, 243, 243);">
+                  <img src="img/1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between">
+                    <div class="bg-light px-2 py-1 rounded-1" style="height: 30px;"><p style="font-size: small;">10,000 IQD</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart-fill text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title " >کتێب باشترین هاوڕێی مرۆڤە</h6>
+                    <span class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</span>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">01</span>/02</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>04:30 د.ن</span>
+                    </div>
+                   <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+                  </div>
+                </div>
+                </div>
+
+                <div class="card m-3" style="max-width: 18rem; background-color: rgb(243, 243, 243);">
+                  <img src="img/0.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between">
+                    <div class="bg-light px-2 py-1 rounded-1" style="height: 30px;"><p style="font-size: small;">10,000 IQD</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart-fill text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title " >پشووەکانت بەکاربهێنە</h6>
+                    <span class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</span>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">01</span>/02</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>04:30 د.ن</span>
+                    </div>
+                   <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+                  </div>
+                </div>
+                </div>
+            
+                <div class="card m-3 bg-light " style="max-width: 18rem;">
+                  <img src="img/2.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between" style="height: 70px;">
+                    <div class="bg-light px-2 py-1  rounded-2" style="height: 30px;"><p style="font-size: small;">خۆڕایی</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart-fill text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title " >هێزی متمانە</h6>
+                    <span class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</span>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">24</span>/03</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>10:30 پ.ن</span>
+                    </div>
+                    <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+                  </div>
+                </div>
+                </div>
+            
+                <div class="card m-3 bg-light" style="max-width: 18rem;">
+                  <img src="img/3.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between" style="height: 70px;">
+                    <div class="bg-light px-2 py-1  rounded-2" style="height: 30px;"><p style="font-size: small;">خۆڕایی</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title" >زانکۆ ناوەندی مەعریفی</h6>
+                    <p class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</p>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">15</span>/03</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>02:00 د.ن</span>
+                    </div>
+                    <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+            
+                  </div>
+                </div>
+                </div>
+                <div class="card m-3" style="max-width: 18rem; background-color: rgb(243, 243, 243);">
+                  <img src="img/1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between">
+                    <div class="bg-light px-2 py-1 rounded-1" style="height: 30px;"><p style="font-size: small;">10,000 IQD</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart-fill text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title " >کتێب باشترین هاوڕێی مرۆڤە</h6>
+                    <span class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</span>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">01</span>/02</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>04:30 د.ن</span>
+                    </div>
+                   <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+                  </div>
+                </div>
+                </div>
+            
+                <div class="card m-3 bg-light " style="max-width: 18rem;">
+                  <img src="img/2.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between" style="height: 70px;">
+                    <div class="bg-light px-2 py-1  rounded-2" style="height: 30px;"><p style="font-size: small;">خۆڕایی</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart-fill text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title " >هێزی متمانە</h6>
+                    <span class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</span>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">24</span>/03</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>10:30 پ.ن</span>
+                    </div>
+                    <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+                  </div>
+                </div>
+                </div>
+            
+                <div class="card m-3 bg-light" style="max-width: 18rem;">
+                  <img src="img/3.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between" style="height: 70px;">
+                    <div class="bg-light px-2 py-1  rounded-2" style="height: 30px;"><p style="font-size: small;">خۆڕایی</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title" >زانکۆ ناوەندی مەعریفی</h6>
+                    <p class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</p>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">15</span>/03</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>02:00 د.ن</span>
+                    </div>
+                    <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+            
+                  </div>
+                </div>
+                </div>
+                <div class="card m-3" style="max-width: 18rem; background-color: rgb(243, 243, 243);">
+                  <img src="img/1.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between">
+                    <div class="bg-light px-2 py-1 rounded-1" style="height: 30px;"><p style="font-size: small;">10,000 IQD</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart-fill text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title " >کتێب باشترین هاوڕێی مرۆڤە</h6>
+                    <span class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</span>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">01</span>/02</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>04:30 د.ن</span>
+                    </div>
+                   <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+                  </div>
+                </div>
+                </div>
+
+                <div class="card m-3" style="max-width: 18rem; background-color: rgb(243, 243, 243);">
+                  <img src="img/0.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between">
+                    <div class="bg-light px-2 py-1 rounded-1" style="height: 30px;"><p style="font-size: small;">10,000 IQD</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart-fill text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title " >پشووەکانت بەکاربهێنە</h6>
+                    <span class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</span>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">01</span>/02</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>04:30 د.ن</span>
+                    </div>
+                   <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+                  </div>
+                </div>
+                </div>
+            
+                <div class="card m-3 bg-light " style="max-width: 18rem;">
+                  <img src="img/2.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between" style="height: 70px;">
+                    <div class="bg-light px-2 py-1  rounded-2" style="height: 30px;"><p style="font-size: small;">خۆڕایی</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart-fill text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title " >هێزی متمانە</h6>
+                    <span class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</span>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">24</span>/03</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>10:30 پ.ن</span>
+                    </div>
+                    <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+                  </div>
+                </div>
+                </div>
+            
+                <div class="card m-3 bg-light" style="max-width: 18rem;">
+                  <img src="img/3.jpg" class="card-img-top" alt="...">
+                  <div class="card-img-overlay d-flex justify-content-between" style="height: 70px;">
+                    <div class="bg-light px-2 py-1  rounded-2" style="height: 30px;"><p style="font-size: small;">خۆڕایی</p></div>
+                    <div class="d-flex">
+                    <div class="bg-light p-2 rounded-circle ms-2 d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-share"></i></div>
+                    <div class="bg-light p-2 rounded-circle d-flex justify-content-center " style="cursor: pointer; height: 30px; width: 30px;"><i class="bi bi-heart text-danger"></i></div>  
+                  </div>
+                </div>
+                  <div class="card-body px-4 py-4 d-flex">
+                    <div>
+                    <h6 class="card-title" >زانکۆ ناوەندی مەعریفی</h6>
+                    <p class="card-text text-secondary" style="font-size: small;">لەژێر ناونیشانی کتێب باشترین هاوڕێی مرۆڤە د.زانا احمد قەساب سیمینارێک...</p>
+                    <div class="mb-3 mt-1">
+                      <i class="bi bi-calendar-range"></i>
+                      <span class=" text-center mb-1"><span class=" text-fr">15</span>/03</span>
+                      <i class="bi bi-clock me-2"></i>
+                      <span>02:00 د.ن</span>
+                    </div>
+                    <div class="d-grid gap-2"> <a href="redmore.html" class="btn text-white " style="background-color: #9330ff;border-color: #9330ff;">زیاتر</a></div>
+            
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="row">
+            
+            </div>
+          </div>
+        </div>  <br><br>
+        
+          
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+        <script src="./bootstrap.bundle.min" ></script>
+
+                   
+      
+      </body>
+</html>
+
+
